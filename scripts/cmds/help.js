@@ -65,7 +65,7 @@ module.exports = {
       msg += ``;
       msg += `\n╭─────❃\n│ 🌟 | [✨𝙶𝙾𝙰𝚃𝙱𝙾𝚃🐐│𝙾𝚆𝙽𝙴𝚁 𝙵𝙱 𝙸𝙳: https://www.facebook.com/mdyeasin.arafat.junayed/n╰────────────✦`; 
 
-      const attachment = await axios.get("", { responseType: "stream" });
+      const attachment = await axios.get("https://i.imgur.com/eWcuZz0.jpeg", { responseType: "stream" });
 
       await message.reply({
         body: msg,
