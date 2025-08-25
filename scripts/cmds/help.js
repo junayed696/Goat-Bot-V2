@@ -48,24 +48,24 @@ module.exports = {
 
       Object.keys(categories).forEach((category) => {
         if (category !== "info") {
-          msg += `\n╭─────❃『  🍀${category.toUpperCase()} 🐐💨 』`;
+          msg += `\n╭─❃『  ${category.toUpperCase()}  』`;
 
           const names = categories[category].commands.sort();
           for (let i = 0; i < names.length; i += 3) {
-            const cmds = names.slice(i, i + 2).map((item) => `✨${item}✨`);
+            const cmds = names.slice(i, i + 2).map((item) => `${item}`);
             msg += `\n│${cmds.join(" ".repeat(Math.max(1, 5 - cmds.join("").length)))}`;
           }
 
-          msg += `\n╰────────────✦`;
+          msg += `\n🐔`;
         }
       });
 
       const totalCommands = commands.size;
-      msg += `\n\n╭─────❃[✨𝙴𝙽𝙹𝙾𝚈✨] |[✨Yeasin Arafat Junayed✨]\n | [ 🍀𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝚃𝚈𝙿𝙴: ${prefix}𝚂𝚄𝙿𝙿𝙾𝚁𝚃𝙶𝙲 ]\n | [✨𝙳𝙰𝚈𝚁𝙴𝙲𝚃 𝙶𝚁𝙾𝚄𝙿 𝙻𝙸𝙽𝙺: //m.me/j/AbZGfIdes8qdzjsy/ ]\n│>𝚃𝙾𝚃𝙰𝙻 𝙲𝙼𝙳𝚂: [✨${totalCommands}✨].\n│𝚃𝚈𝙿𝙴:[ 🍀${prefix}𝙷𝙴𝙻𝙿 𝚃𝙾✨\n│✨<𝙲𝙼𝙳> 𝚃𝙾 𝙻𝙴𝙰𝚁𝙽 𝚃𝙷𝙴 𝚄𝚂𝙰𝙶𝙴.]\n╰────────────✦`;
+      msg += `\n\n╭─────❃[✨𝙴𝙽𝙹𝙾𝚈✨] |[✨Junayed | Gladiator Bot✨]\n | [ 🍀𝙹𝙾𝙸𝙽 𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝚃𝚈𝙿𝙴: ${prefix}help For Command's ]\n | [Owner : Md Yeasin Arafat Junayed]\n│>𝚃𝙾𝚃𝙰𝙻 𝙲𝙼𝙳𝚂: [${totalCommands}].\n│𝚃𝚈𝙿𝙴:[ 🍀${prefix}𝙷𝙴𝙻𝙿 𝚃𝙾\n│<𝙲𝙼𝙳> 𝚃𝙾 𝙻𝙴𝙰𝚁𝙽 𝚃𝙷𝙴 𝚄𝚂𝙰𝙶𝙴.]\n✦`;
       msg += ``;
-      msg += `\n╭─────❃\n│ 🌟 | [✨𝙶𝙾𝙰𝚃𝙱𝙾𝚃🐐│𝙾𝚆𝙽𝙴𝚁 𝙵𝙱 𝙸𝙳: https://www.facebook.com/mdyeasin.arafat.junayed/n╰────────────✦`; 
+      msg += `\n╭─────❃\n│ 🌟 | [✨𝙶𝙾𝙰𝚃𝙱𝙾𝚃🐐│𝙾𝚆𝙽𝙴𝚁 𝙵𝙱 𝙸𝙳: //https://www.facebook.com/mdyeasin.arafat.junayed\n╰────────────✦`; 
 
-      const attachment = await axios.get("https://i.imgur.com/eWcuZz0.jpeg", { responseType: "stream" });
+      const attachment = await axios.get("https://files.catbox.moe/okbrcu.mp4", { responseType: "stream" });
 
       await message.reply({
         body: msg,
@@ -101,7 +101,7 @@ module.exports = {
  ├── ✨𝐔𝐬𝐚𝐠𝐞✨
  │ ${usage}
  ├──✨𝐍𝐨𝐭𝐞𝐬✨
- │ ⚡𝚃𝚑𝚎 𝚌𝚘𝚗𝚝𝚎𝚗𝚝 inside <𝙽𝙸𝚂𝙰𝙽> 𝚌𝚊𝚗 𝚋𝚎 𝚌𝚑𝚊𝚗𝚐𝚎𝚍
+ │ ⚡𝚃𝚑𝚎 𝚌𝚘𝚗𝚝𝚎𝚗𝚝 inside <Gladiator Bot> 𝚌𝚊𝚗 𝚋𝚎 𝚌𝚑𝚊𝚗𝚐𝚎𝚍
  │ ⚡𝚃𝚑𝚎 𝚌𝚘𝚗𝚝𝚎𝚗𝚝 inside [𝙰|𝙱|𝙲] 𝚒𝚜 𝚊 𝚘𝚛 𝚋 𝚘𝚛 𝚌
  ╰━━━━━━━❖`;
 
