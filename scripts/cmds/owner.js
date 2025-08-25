@@ -23,8 +23,8 @@ module.exports = {
 		const authorNumber = "018××××××01";
 		const Status = "⩸ Single ⩸";
 		const urls = [
-"",
-""
+"https://files.catbox.moe/1emkfe.jpg",
+"https://files.catbox.moe/dwwb73.jpg"
 ];
 		const link = urls[Math.floor(Math.random() * urls.length)];
 		const now = moment().tz('Asia/Jakarta');
