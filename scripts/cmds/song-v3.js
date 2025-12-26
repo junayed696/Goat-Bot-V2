@@ -2,7 +2,7 @@ const axios = require("axios");
 const fs = require('fs')
 const baseApiUrl = async () => {
   const base = await axios.get(
-`https://raw.githubusercontent.com/Blankid018/D1PT0/main/baseApiUrl.json`,
+`https://anabot.my.id/api/download/ytmp3?url=https%3A%2F%2Fyoutu.be%2Ft00JmxGWq4I%3Fsi%3DW2jlT6cYeL8oUSbA&apikey=freeApikey`,
   );
   return base.data.api;
 };
